@@ -46,3 +46,93 @@ Filebeat monitors the log files or locations that you specify, collects log even
 What does Metricbeat record?_
 Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
+
+The configuration details of each machine may be found below.
+(Add the table with IP address details)
+
+
+Access Policies
+
+The machines on the internal network are not exposed to the public Internet.
+Only the ___Jump-Box-Provisioner__ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+
+-	Workstation MY Public IP through TCP 5601
+Machines within the network can only be accessed by __Workstation and Jump-Box-Provisioner through SSH Jumb-Box___.
+
+Which machine did you allow to access your ELK VM? Jump-Box-Provisioner IP : 10.1.0.4 via SSH port 22 What was its IP address?_
+Workstation MY Public IP via port TCP 5601
+
+A summary of the access policies in place can be found in the table below.
+(Add the table below)
+
+Elk Configuration
+
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+What is the main advantage of automating configuration with Ansible?_ Ansible lets you quickly and easily deploy multitier applications through a YAML playbook.
+No need to write custom code to automate your systems.
+Ansible will also figure out how to get your systems to the state you want them to be in.
+
+
+The playbook implements the following tasks:
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+To specify a different group of machines - name: Config elk VM with Docker
+hosts: elk
+become: true
+tasks:
+To install Docker.io
+
+-	name: Install docker.io apt:
+
+update_cache: yes
+force_apt_get: yes
+name: docker.io
+ 
+state: present
+To install Python-pip
+
+-	name: Install python3-pip apt:
+
+force_apt_get: yes
+
+name: python3-pip
+state: present
+
+# Use pip module (It will default to pip3)
+
+-	name: Install Docker module pip:
+
+name: docker
+state: present
+
+`docker`, which is the Docker Python pip module.
+To Increase Virtual Memory
+
+-	name: Use more memory sysctl:
+
+name: vm.max_map_count
+value: '262144'
+state: present
+reload: yes
+
+Download and Launch ELK Docker Container (image sebp/elk)
+
+-	name: Download and launch a docker elk container docker_container:
+
+name: elk
+image: sebp/elk:761
+state: started
+restart_policy: always
+
+Published ports 5044, 5601 and 9200 were made available published_ports:
+
+-	5601:5601
+-	9200:9200
+-	5044:5044
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+Connect to jump-Box-Provisioner VM
+
+(Add the sudo container list diagram)
+
+
