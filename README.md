@@ -135,4 +135,37 @@ Connect to jump-Box-Provisioner VM
 
 (Add the sudo container list diagram)
 
+Target Machines & Beats
+
+This ELK server is configured to monitor the following machines:
+
+List the IP addresses of the machines you are monitoring_
+Web-1: 10.0.0.5
+Web-2: 10.0.0.6
+DVWA-VM3: 10.0.0.7
+
+We have installed the following Beats on these machines:
+
+Filebeat:
+( Start Filebeat and Start MetricBeat diagram)
+
+Using the Playbook
+
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
+SSH into the control node and follow the steps below:
+-	Copy the __yml___ file to __ansible folder___.
+-	Update the __config___ file to include remote users and ports.
+
+-	Run the playbook, and navigate to ____ to check that the installation worked as expected.
+
+_TODO: Answer the following questions to fill in the blanks:_
+
+-	_Which file is the playbook? cd /etc/ansible ansible-playbook elk.yml Where do you copy it?_
+
+-	_Which file do you update to make Ansible run the playbook on a specific machine?
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+
+-	_Which URL do you navigate to in order to check that the ELK server is running?
 
