@@ -1,4 +1,4 @@
-# GitFundametals
+# Git Fundametals
 Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -46,8 +46,13 @@ Metricbeat takes the metrics and statistics that it collects and ships them to t
 
 
 The configuration details of each machine may be found below.
-(Add the table with IP address details)
 
+Name     Function    Address     Operating System
+Jump Box
+Web 1
+Web 2
+DVWA - 3
+ELK VM
 
 ## Access Policies
 
