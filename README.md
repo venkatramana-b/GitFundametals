@@ -8,15 +8,15 @@ The files in this repository were used to configure the network depicted below.
 
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ___yml and config__ file may be used to install only certain pieces of it, such as Filebeat. See in the Ansible folder for the below
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ___yml and config__ file may be used to install only certain pieces of it, such as Filebeat. See in the Ansible folder for the below:
 
-•	Hosts
-•	Ansible Configuration
-•	Ansible ELK Installation and VM Configuration
-•	Filebeat Config
-•	Filebeat Playbook
-•	Metricbeat Config
-•	Metricbeat Playbook
+- Hosts
+- Ansible Configuration
+- Ansible ELK Installation and VM Configuration
+- Filebeat Config
+- Filebeat Playbook
+- Metricbeat Config
+- Metricbeat Playbook
  
 
 This document contains the following details:
