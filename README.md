@@ -19,7 +19,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - Metricbeat Playbook
  
 
-This document contains the following details:
+# This document contains the following details:
 -	Description of the Topology
 -	Access Policies
 -	ELK Configuration
@@ -28,7 +28,7 @@ This document contains the following details:
 -	How to Use the Ansible Build
 
 
-Description of the Topology
+#Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly __functional and available___, in addition to restricting __traffic___ to the network.
