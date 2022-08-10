@@ -28,7 +28,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 -	How to Use the Ansible Build
 
 
-#Description of the Topology
+##Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly __functional and available___, in addition to restricting __traffic___ to the network.
@@ -53,7 +53,7 @@ The configuration details of each machine may be found below.
 (Add the table with IP address details)
 
 
-Access Policies
+##Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 Only the ___Jump-Box-Provisioner__ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
@@ -67,7 +67,7 @@ Workstation MY Public IP via port TCP 5601
 A summary of the access policies in place can be found in the table below.
 (Add the table below)
 
-Elk Configuration
+##Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 What is the main advantage of automating configuration with Ansible?_ Ansible lets you quickly and easily deploy multitier applications through a YAML playbook.
@@ -99,7 +99,7 @@ force_apt_get: yes
 name: python3-pip
 state: present
 
-# Use pip module (It will default to pip3)
+### Use pip module (It will default to pip3)
 
 -	name: Install Docker module pip:
 
@@ -116,7 +116,7 @@ value: '262144'
 state: present
 reload: yes
 
-Download and Launch ELK Docker Container (image sebp/elk)
+### Download and Launch ELK Docker Container (image sebp/elk)
 
 -	name: Download and launch a docker elk container docker_container:
 
@@ -131,13 +131,13 @@ Published ports 5044, 5601 and 9200 were made available published_ports:
 -	9200:9200
 -	5044:5044
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+##The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 Connect to jump-Box-Provisioner VM
 
 (Add the sudo container list diagram)
 
-Target Machines & Beats
+##Target Machines & Beats
 
 This ELK server is configured to monitor the following machines:
 
@@ -151,7 +151,7 @@ We have installed the following Beats on these machines:
 Filebeat:
 ( Start Filebeat and Start MetricBeat diagram)
 
-Using the Playbook
+##Using the Playbook
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
