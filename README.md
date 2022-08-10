@@ -131,7 +131,10 @@ Published ports 5044, 5601 and 9200 were made available published_ports:
 
 Connect to jump-Box-Provisioner VM
 
-(Add the sudo container list diagram)
+![image](https://user-images.githubusercontent.com/25852863/183999555-d4be811d-4964-445c-84b4-0bb686fcc543.png)
+![image](https://user-images.githubusercontent.com/25852863/183999607-517f4747-126c-4a03-832d-3ed23571ea8e.png)
+
+
 
 ##Target Machines & Beats
 
