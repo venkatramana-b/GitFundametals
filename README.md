@@ -1,9 +1,10 @@
 # GitFundametals
 Automated ELK Stack Deployment
-Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 (Add the Diagram here)
+![Diagram](https://user-images.githubusercontent.com/25852863/183975707-61d6947a-d5e9-43f0-b733-8dd41ea4438c.JPG)
+
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ___yml and config__ file may be used to install only certain pieces of it, such as Filebeat. See in the Ansible folder for the below
